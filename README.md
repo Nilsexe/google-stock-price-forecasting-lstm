@@ -75,15 +75,16 @@ Dense Layer (units=1)  # Forecasted closing price
 
 ### Model Summary
 
-|   | Layer (type) | Output Shape   | Param # |
-| - | ------------ | -------------- | ------- |
-| 1 | LSTM         | (None, 60, 60) | 14880   |
-| 2 | Dropout      | (None, 60, 60) | 0       |
-| 3 | LSTM         | (None, 60, 60) | 29040   |
-| 4 | Dropout      | (None, 60, 60) | 0       |
-| 5 | LSTM         | (None, 60)     | 29040   |
-| 6 | Dropout      | (None, 60)     | 0       |
-| 7 | Dense        | (None, 1)      | 61      |
+| Layer (type) | Output Shape   | Param # |
+| ------------ | -------------- | ------- |
+| LSTM         | (None, 60, 60) | 14880   |
+| Dropout      | (None, 60, 60) | 0       |
+| LSTM         | (None, 60, 60) | 29040   |
+| Dropout      | (None, 60, 60) | 0       |
+| LSTM         | (None, 60)     | 29040   |
+| Dropout      | (None, 60)     | 0       |
+| Dense        | (None, 1)      | 61      |
+
 Total params: 72,021
 Trainable params: 72,021
 Non-trainable params: 0
