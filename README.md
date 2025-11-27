@@ -57,22 +57,17 @@ The LSTM forecasting model uses a stacked recurrent architecture:
   - The model takes sequences of past 60 days of normalized closing price data (window length), forming the input shape (sequence_length, 1).
 - LSTM Layers
   - First LSTM layer
-    - Units: 300 
+    - Units: 60
     - return_sequences=True, so that it outputs a full sequence to the next LSTM.
     - Activation: typically tanh (default) for LSTM.
     - Dropout: e.g., Dropout(0.2) to regularize and reduce overfitting.
   - Second LSTM layer
-    - Units: 100 
+    - Units: 60
     - return_sequences=True
     - Activation: tanh
     - Dropout: 0.2
   - Third LSTM layer
-    - Units: 100 
-    - return_sequences=True
-    - Activation: tanh
-    - Dropout: 0.2
-  - Forth LSTM
-    - Units: 100 
+    - Units: 60
     - return_sequences=False
     - Activation: tanh
     - Dropout: 0.2
