@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/google_stock_price_thumbnail.png" alt="Apple Stock Price">
+  <img src="assets/google_stock_price_thumbnail.png" alt="Google Stock Price">
 </p>
 
 # 📈 Google Stock Price Forecasting Using LSTM  
@@ -123,11 +123,11 @@ The notebook includes several informative visualizations:
 
 ### ✔ Actual vs. Predicted Prices  
 A direct comparison of model output vs. true values.
-![Actual vs Predicted Prices](images/actual_vs_predicted_prices.png)
+![Actual vs Predicted Prices](assets/actual_vs_predicted_prices.png)
 
 ### ✔ Training Loss Curve  
 Displays convergence behavior during model training.
-![Loss Over Epochs](images/loss_over_epochs.png)
+![Loss Over Epochs](assets/loss_over_epochs.png)
 
 ---
 
