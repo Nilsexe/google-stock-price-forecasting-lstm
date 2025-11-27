@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/google_stock_price_thumbnail.png" alt="Apple Stock Price">
+</p>
+
 # 📈 Google Stock Price Forecasting Using LSTM  
 *A Deep Learning Approach to Time-Series Prediction*
 
