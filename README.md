@@ -14,7 +14,7 @@
 
 ---
 
-## 🧠 Overview
+## 🔍 Overview
 
 This project demonstrates how to build and evaluate a **Long Short-Term Memory (LSTM)** deep learning model to forecast the closing price of **Google (GOOGL)** stock.
 
