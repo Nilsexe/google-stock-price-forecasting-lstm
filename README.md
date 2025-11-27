@@ -62,7 +62,7 @@ The purpose of the project is to explore the effectiveness of recurrent neural n
 
 ---
 
-## 📊 Model Architecture
+## 🧠 Model Architecture
 
 The LSTM forecasting model uses a stacked recurrent architecture:
 
@@ -216,6 +216,17 @@ If you reuse or redistribute this data, please attribute the original dataset:
 
 This project is provided under the [MIT License](LICENSE).
 Feel free to use, modify, and distribute for personal or educational purposes.
+
+---
+
+## 🙏 Acknowledgements
+
+I would like to express my gratitude to everyone who supported and contributed — directly or indirectly — to this project:
+
+- I thank the author of the dataset Google Stock Price (user “rahulsah06” on Kaggle) for publishing the historical stock-price data, which forms the basis of this entire analysis. ([GitHub Repository](https://github.com/ArianJr/google-stock-price-forecasting-lstm))  
+- I acknowledge the developers and maintainers of the open-source libraries used in this project: TensorFlow / Keras for enabling the LSTM model implementation; Pandas and NumPy for data manipulation; and Matplotlib / Seaborn for visualization — without these tools this work would not have been possible.  
+- I appreciate the users and the community of GitHub for providing a collaborative platform that encourages sharing, improvement, and distribution of open-source data science projects.  
+- Finally, I thank anyone who has reviewed, given feedback, or simply followed this project — your interest and input motivate the continued development and improvement of this work.
 
 ---
 
