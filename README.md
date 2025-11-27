@@ -38,8 +38,8 @@ The purpose of the project is to explore the effectiveness of recurrent neural n
 ## 📂 Project Structure
 
 | File/Folder                        | Description                                                                 |
-|------------------------------------|----------------------------------------------------------------------------- | Contains the historical|
-| `dataset/`                         Google stock price dataset                          |
+|------------------------------------|----------------------------------------------------------------------------- |
+| `dataset/`                         | Google stock price dataset                          |
 | `assets/`                          | Stores generated plots, graphs, visualizations and thumbnails (e.g., predicted vs. actual stock prices) |
 | `.gitignore`                       | Specifies files and directories to ignore in Git                            |
 | `LICENSE`                          | MIT License file                                                            |
