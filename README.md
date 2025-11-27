@@ -37,6 +37,15 @@ The purpose of the project is to explore the effectiveness of recurrent neural n
 
 ## 📂 Project Structure
 
+| File/Folder                        | Description                                                                 |
+|------------------------------------|----------------------------------------------------------------------------- | Contains the historical|
+| `dataset/`                         Google stock price dataset                          |
+| `assets/`                          | Stores generated plots, graphs, visualizations and thumbnails (e.g., predicted vs. actual stock prices) |
+| `.gitignore`                       | Specifies files and directories to ignore in Git                            |
+| `LICENSE`                          | MIT License file                                                            |
+| `README.md`                        | Documentation with project overview, objectives, and usage                  |
+| `google_stock_price_forecast_lstm.ipynb` | Jupyter Notebook with the full pipeline: preprocessing, LSTM model training, evaluation, and visualization |
+| `requirements.txt`                 | Python dependencies required to run the project                             |
 
 
 ---
