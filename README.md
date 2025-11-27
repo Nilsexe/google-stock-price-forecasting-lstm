@@ -25,7 +25,7 @@ The purpose of the project is to explore the effectiveness of recurrent neural n
 - Load and visualize historical Google stock market data  
 - Prepare time-series sequences suitable for LSTM networks  
 - Build and train an LSTM model using TensorFlow/Keras  
-- Evaluate predictions using **RMSE**, **MAE**, and **MSE**  
+- Evaluate predictions using **RMSE**
 - Plot actual vs. predicted values  
 - Discuss limitations and future improvements  
 
