@@ -53,21 +53,21 @@ The purpose of the project is to explore the effectiveness of recurrent neural n
 
 The LSTM forecasting model uses a stacked recurrent architecture:
 
-Input Layer (timesteps=60, 1 feature)
+- Input Layer (timesteps=60, 1 feature)
 ↓
-LSTM Layer (units=60)
+- LSTM Layer (units=60)
 ↓
-Dropout (0.2)
+- Dropout (0.2)
 ↓
-LSTM Layer (units=60)
+- LSTM Layer (units=60)
 ↓
-Dropout (0.2)
+- Dropout (0.2)
 ↓
-LSTM Layer (units=60)
+- LSTM Layer (units=60)
 ↓
-Dropout (0.2)
+- Dropout (0.2)
 ↓
-Dense Layer (units=1)  # Forecasted closing price
+- Dense Layer (units=1)  # Forecasted closing price
 
 - **Optimizer:** Adam  
 - **Loss Function:** Mean Squared Error (MSE)  
